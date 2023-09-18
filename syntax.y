@@ -1,3 +1,5 @@
+//这些东西看起来可能很复杂，但重复性操作较多，思路清晰并不难做
+
 %{
 #include <stdio.h>
 #include <stdlib.h>
@@ -369,7 +371,7 @@ void ConditionDistribute(pNODE oldc,pNODE* c,char *ch1)
 	
 
 	
-	//比对首字母，相同就是一个关系的
+	//比对首字母，相同就是一个关系的。这种检测方式并不可靠，但是实验并没有给出如何分类...
 	do
 	{
 		if(*chold == *ch1)
